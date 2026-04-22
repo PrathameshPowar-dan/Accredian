@@ -19,7 +19,7 @@ export default function Navbar() {
     ];
 
     return (
-        <nav className="w-full bg-white relative z-50">
+        <nav className="w-full bg-white shadow-md relative z-50">
             {/* Desktop & Mobile Top Bar */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
@@ -41,9 +41,9 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`text-sm font-medium transition-colors duration-200 ${link.isActive
-                                        ? "text-[#1A73E8] border-b-2 border-[#1A73E8] pb-1"
-                                        : "text-gray-800 hover:text-[#1A73E8]"
+                                className={`text-base transition-colors duration-200 ${link.isActive
+                                        ? "text-[#1A73E8] font-bold border-b-2 border-[#1A73E8] pb-1"
+                                        : "text-gray-800 font-normal hover:text-[#1A73E8]"
                                     }`}
                             >
                                 {link.name}
