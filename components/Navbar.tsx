@@ -8,7 +8,7 @@ export default function Navbar() {
 
     // Array of navigation links to keep the code DRY
     const navLinks = [
-        { name: "Home", href: "/", isActive: true }, // Set true for the active styling
+        { name: "Home", href: "/", isActive: true },
         { name: "Stats", href: "#" },
         { name: "Clients", href: "#" },
         { name: "Accredian Edge", href: "#" },
@@ -55,13 +55,13 @@ export default function Navbar() {
                     <div className="flex lg:hidden items-center">
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="text-gray-800 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#1A73E8] p-2"
+                            className="text-gray-800 hover:text-black focus:outline-none p-2"
                             aria-expanded={isMobileMenuOpen}
                         >
                             <span className="sr-only">Open main menu</span>
                             {isMobileMenuOpen ? (
                                 <svg
-                                    className="h-7 w-7"
+                                    className="h-8 w-8"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
@@ -77,7 +77,7 @@ export default function Navbar() {
                                 </svg>
                             ) : (
                                 <svg
-                                    className="h-7 w-7"
+                                    className="h- 8 w-8"
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
                                     viewBox="0 0 24 24"
