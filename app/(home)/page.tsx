@@ -1,4 +1,5 @@
 import Hero from "./_components/hero";
+import Partnerships from "./_components/Partnerships";
 import TrackRecord from "./_components/TrackRecord";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
         <div className="flex bg-white flex-col gap-16 md:gap-24 pb-20">
             <Hero />
             <TrackRecord />
+            <Partnerships />
         </div>
     );
 }
