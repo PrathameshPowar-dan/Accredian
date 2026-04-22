@@ -25,7 +25,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
 
                     {/* Logo Section */}
-                    <div className="flex-shrink-0 flex items-center">
+                    <div className="shrink-0 flex items-center">
                         <Link href="/">
                             <img
                                 src="/logo.webp"
@@ -60,7 +60,6 @@ export default function Navbar() {
                         >
                             <span className="sr-only">Open main menu</span>
                             {isMobileMenuOpen ? (
-                                // Close Icon (X)
                                 <svg
                                     className="h-7 w-7"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +76,6 @@ export default function Navbar() {
                                     />
                                 </svg>
                             ) : (
-                                // Hamburger Icon
                                 <svg
                                     className="h-7 w-7"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -99,16 +97,16 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Navigation Dropdown (Floating Card matching screenshot) */}
+            {/* Mobile Navigation Dropdown */}
             {isMobileMenuOpen && (
-                <div className="lg:hidden absolute top-20 right-4 w-64 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 py-4 px-2">
+                <div className="lg:hidden absolute top-22 right-4 w-48 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-100 py-1 px-1">
                     <div className="flex flex-col space-y-1">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                onClick={() => setIsMobileMenuOpen(false)} // Close menu on click
-                                className={`block px-4 py-3 text-base font-medium rounded-md transition-colors ${link.isActive
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className={`block px-4 py-3 text-base font-semibold rounded-md transition-colors ${link.isActive
                                         ? "text-[#1A73E8] bg-blue-50/50 underline underline-offset-4 decoration-2"
                                         : "text-gray-800 hover:text-[#1A73E8] hover:bg-gray-50"
                                     }`}
