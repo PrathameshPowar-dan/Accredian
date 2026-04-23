@@ -4,6 +4,7 @@ import CourseSeg from "./_components/Course";
 import DomainExpertise from "./_components/DomainExpertise";
 import Hero from "./_components/hero";
 import Partnerships from "./_components/Partnerships";
+import SkillDevelopment from "./_components/SkillDev";
 import SkillEnhancement from "./_components/SkillEnhancement";
 import TrackRecord from "./_components/TrackRecord";
 
@@ -18,6 +19,7 @@ export default function Home() {
             <CourseSeg />
             <SkillEnhancement />
             <CATFramework />
+            <SkillDevelopment />
         </div>
     );
 }
