@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-export default function SkillEnhancement() {
+export default function CourseSeg() {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const [touchStart, setTouchStart] = useState<number | null>(null);
