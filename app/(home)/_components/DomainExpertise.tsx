@@ -46,7 +46,7 @@ export default function DomainExpertise() {
                         >
                             <div
                                 className={`
-                                    bg-[#FFFFFF] border border-black/10 shadow-2xs rounded-2xl p-0 md:p-2 flex flex-row md:flex-col items-center justify-center text-center transition-all duration-300 cursor-pointer group
+                                    bg-[#FFFFFF] border border-black/10 shadow-2xl md:shadow-2xl rounded-2xl p-0 md:p-2 flex flex-row md:flex-col items-center justify-center text-center transition-all duration-300 cursor-pointer group
                                     ${isLastItem ? 'w-[calc(50%-8px)] sm:w-[calc(50%-8px)] md:w-full' : 'w-full'}
                                 `}
                             >
