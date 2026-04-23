@@ -53,7 +53,7 @@ export default function FAQSection() {
     return (
         <section
             id="faqs"
-            className="w-full max-w-6xl mx-auto px-4 sm:px-6 mt-14 md:mt-20"
+            className="w-full max-w-6xl mx-auto px-4 sm:px-6 mt-4 md:mt-10"
         >
             {/* Heading */}
             <div className="mb-8 md:mb-10 text-center md:text-left">
