@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <section className="w-full max-w-8xl mx-auto px-0 md:px-6 lg:px-8 mt-0 md:mt-8">
+        <section id='home' className="w-full max-w-8xl mx-auto px-0 md:px-6 lg:px-8 mt-0 md:mt-8">
             <div className="bg-[#F0F7FF] shadow-2xl rounded-none md:rounded-4xl overflow-hidden flex flex-col-reverse md:flex-row items-center md:items-stretch justify-between relative px-6 pt-6 pb-8 md:px-14 md:pt-16 md:pb-0">
 
                 {/* Left Side: Text Content */}

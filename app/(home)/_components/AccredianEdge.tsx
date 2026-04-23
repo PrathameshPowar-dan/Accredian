@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AccredianEdge() {
     return (
-        <section className="w-full max-w-8xl mx-auto px-2 sm:px-6 lg:px-8 mt-16 md:mt-24">
+        <section id='edge' className="w-full max-w-8xl mx-auto px-2 sm:px-6 lg:px-8 mt-16 md:mt-24">
             
             {/* Section Headers */}
             <div className="text-center mb-10 md:mb-16">

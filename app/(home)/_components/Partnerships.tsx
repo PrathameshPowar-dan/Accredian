@@ -12,7 +12,7 @@ export default function Partnerships() {
     ];
 
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-10">
+        <section id='clients' className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-10">
             
             {/* Section Headers */}
             <div className="text-center mb-10 md:mb-12">

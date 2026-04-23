@@ -17,7 +17,7 @@ export default function TrackRecord() {
     ];
 
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 md:mt-8">
+        <section id='stats' className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 md:mt-8">
             {/* Section Headers */}
             <div className="text-center mb-10">
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-1 md:mb-2">
