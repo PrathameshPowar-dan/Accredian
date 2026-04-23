@@ -1,4 +1,5 @@
 import AccredianEdge from "./_components/AccredianEdge";
+import DomainExpertise from "./_components/DomainExpertise";
 import Hero from "./_components/hero";
 import Partnerships from "./_components/Partnerships";
 import TrackRecord from "./_components/TrackRecord";
@@ -10,6 +11,7 @@ export default function Home() {
             <TrackRecord />
             <Partnerships />
             <AccredianEdge />
+            <DomainExpertise />
         </div>
     );
 }
