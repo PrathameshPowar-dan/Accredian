@@ -4,7 +4,7 @@ import TrackRecord from "./_components/TrackRecord";
 
 export default function Home() {
     return (
-        <div className="flex bg-white flex-col gap-16 md:gap-24 pb-20">
+        <div className="flex bg-white flex-col gap-8 md:gap-18 pb-20">
             <Hero />
             <TrackRecord />
             <Partnerships />

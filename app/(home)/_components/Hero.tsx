@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <section className="w-full max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-8">
-            <div className="bg-[#F0F7FF] shadow-2xl rounded-4xl md:rounded-4xl overflow-hidden flex flex-col-reverse md:flex-row items-center md:items-stretch justify-between relative px-6 pt-6 pb-8 md:px-14 md:pt-16 md:pb-0">
+        <section className="w-full max-w-8xl mx-auto px-0 md:px-6 lg:px-8 mt-0 md:mt-8">
+            <div className="bg-[#F0F7FF] shadow-2xl rounded-none md:rounded-4xl overflow-hidden flex flex-col-reverse md:flex-row items-center md:items-stretch justify-between relative px-6 pt-6 pb-8 md:px-14 md:pt-16 md:pb-0">
 
-                {/* Text Content */}
+                {/* Left Side: Text Content */}
                 <div className="w-full md:w-[55%] flex flex-col items-center md:items-start text-center md:text-left z-10 md:pb-16 mt-6 md:mt-0">
 
                     <h1 className="text-3xl sm:text-[2.5rem] md:text-5xl lg:text-[3.5rem] font-bold text-gray-900 leading-[1.2] md:leading-[1.1] tracking-tight mb-4 md:mb-6">
@@ -34,13 +34,13 @@ export default function Hero() {
                     {/* CTA Button */}
                     <Link
                         href="#enquire"
-                        className="w-full md:w-auto block md:inline-block bg-[#1A73E8] hover:bg-blue-700 text-white text-lg font-medium py-2 px-4 rounded-lg md:rounded-md transition-colors duration-200"
+                        className="w-full md:w-auto block md:inline-block bg-[#1A73E8] hover:bg-blue-700 text-white text-lg font-medium py-3 px-8 rounded-lg md:rounded-md transition-colors duration-200"
                     >
                         Enquire Now
                     </Link>
                 </div>
 
-                {/* Image */}
+                {/* Right Side: Image */}
                 <div className="w-full md:w-[45%] flex justify-center md:justify-end items-end relative">
                     <img
                         src="/corporate-big-hero-v4.webp"
