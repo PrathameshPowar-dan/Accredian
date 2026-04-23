@@ -1,3 +1,4 @@
+import AccredianEdge from "./_components/AccredianEdge";
 import Hero from "./_components/hero";
 import Partnerships from "./_components/Partnerships";
 import TrackRecord from "./_components/TrackRecord";
@@ -8,6 +9,7 @@ export default function Home() {
             <Hero />
             <TrackRecord />
             <Partnerships />
+            <AccredianEdge />
         </div>
     );
 }
