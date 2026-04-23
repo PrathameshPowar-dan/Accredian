@@ -1,37 +1,36 @@
 "use client";
 
-import React from 'react';
 import {
     Lightbulb,
     Brain,
-    Briefcase,
-    LineChart,
-    Cpu,
-    Repeat,
-    Cloud
+    Users,
+    ChartNoAxesColumnIncreasing,
+    Settings,
+    Globe,
+    Banknote
 } from 'lucide-react';
 
 export default function DomainExpertise() {
     const domains = [
         { id: 1, title: "Product & Innovation Hub", icon: Lightbulb },
         { id: 2, title: "Gen-AI Mastery", icon: Brain },
-        { id: 3, title: "Leadership Elevation", icon: Briefcase },
-        { id: 4, title: "Tech & Data Insights", icon: LineChart },
-        { id: 5, title: "Operations Excellence", icon: Cpu },
-        { id: 6, title: "Digital Enterprise", icon: Repeat },
-        { id: 7, title: "Fintech Innovation Lab", icon: Cloud }
+        { id: 3, title: "Leadership Elevation", icon: Users },
+        { id: 4, title: "Tech & Data Insights", icon: ChartNoAxesColumnIncreasing },
+        { id: 5, title: "Operations Excellence", icon: Settings },
+        { id: 6, title: "Digital Enterprise", icon: Globe },
+        { id: 7, title: "Fintech Innovation Lab", icon: Banknote }
     ];
 
     return (
-        <section id="expertise" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-24">
+        <section id="expertise" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-10">
 
             {/* Section Headers */}
-            <div className="text-center mb-10 md:mb-16">
+            <div className="text-center mb-10 md:mb-6">
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2 md:mb-4">
                     Our <span className="text-[#1A73E8]">Domain Expertise</span>
                 </h2>
                 <p className="text-sm md:text-lg text-gray-600 font-medium">
-                    Tailored Learning Paths across 7+ industry domains
+                    <span className="text-[#1A73E8]">Specialized Programs</span> Designed to Fuel Innovation
                 </p>
             </div>
 
@@ -47,17 +46,17 @@ export default function DomainExpertise() {
                         >
                             <div
                                 className={`
-                                    bg-[#F8FBFF] border border-black/10 rounded-2xl p-6 md:p-2 flex flex-col items-center justify-center text-center transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.08)] cursor-pointer group
+                                    bg-[#FFFFFF] border border-black/10 shadow-2xs rounded-2xl p-0 md:p-2 flex flex-row md:flex-col items-center justify-center text-center transition-all duration-300 cursor-pointer group
                                     ${isLastItem ? 'w-[calc(50%-8px)] sm:w-[calc(50%-8px)] md:w-full' : 'w-full'}
                                 `}
                             >
                                 {/* Icon Wrapper */}
                                 <div className="w-12 h-12 md:w-16 md:h-16 mb-1 flex items-center justify-center rounded-full">
-                                    <domain.icon className="w-8 h-8 md:w-11 md:h-11 text-[#1A73E8]" />
+                                    <domain.icon className="w-7 h-7 md:w-13 md:h-13 text-[#1A73E8]" />
                                 </div>
 
                                 {/* Card Title */}
-                                <h3 className="text-sm md:text-base font-semibold text-gray-800 leading-tight">
+                                <h3 className="text-[11px] md:text-base font-semibold text-gray-800 leading-tight">
                                     {domain.title}
                                 </h3>
                             </div>
