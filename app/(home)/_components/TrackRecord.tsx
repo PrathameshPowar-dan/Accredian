@@ -7,12 +7,12 @@ export default function TrackRecord() {
             text: "Professionals Trained For Exceptional Career Success",
         },
         {
-            number: "250+",
-            text: "Top-tier Corporate Partnerships Formed",
+            number: "200+",
+            text: "Sessions delivered with unmatched learning excellence",
         },
         {
-            number: "40+",
-            text: "In-Demand Programs & Specializations",
+            number: "5K+",
+            text: "Active learners engaged in dynamic courses",
         }
     ];
 
@@ -23,7 +23,7 @@ export default function TrackRecord() {
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-1 md:mb-2">
                     Our <span className="text-[#1A73E8]">Track Record</span>
                 </h2>
-                <p className="text-sm md:text-lg text-gray-600 font-medium">
+                <p className="text-sm md:text-lg text-gray-800 font-medium">
                     The Numbers Behind <span className="text-[#1A73E8]">Our Success</span>
                 </p>
             </div>
@@ -42,7 +42,7 @@ export default function TrackRecord() {
                         </div>
 
                         {/* Text */}
-                        <p className="text-gray-800 text-sm md:text-base font-medium text-left md:text-center max-w-55 md:max-w-62.5">
+                        <p className="text-gray-900 text-sm md:text-base font-base text-left md:text-center max-w-55 md:max-w-62.5">
                             {stat.text}
                         </p>
                     </div>

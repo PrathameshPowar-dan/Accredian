@@ -12,15 +12,15 @@ export default function Partnerships() {
     ];
 
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-0">
+        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-10">
             
             {/* Section Headers */}
             <div className="text-center mb-10 md:mb-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2">
                     Our Proven <span className="text-[#1A73E8]">Partnerships</span>
                 </h2>
-                <p className="text-sm md:text-base text-gray-600 font-medium">
-                    Network of 20,000+ top-tier partners
+                <p className="text-sm md:text-lg text-gray-800 font-medium">
+                    Successful Collaborations With the <span className="text-[#1A73E8]">Industry's Best</span>
                 </p>
             </div>
 
