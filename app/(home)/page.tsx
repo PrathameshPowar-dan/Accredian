@@ -2,6 +2,7 @@ import AccredianEdge from "./_components/AccredianEdge";
 import CATFramework from "./_components/CATFramework";
 import CourseSeg from "./_components/Course";
 import DomainExpertise from "./_components/DomainExpertise";
+import FAQ from "./_components/FAQ";
 import Hero from "./_components/hero";
 import Partnerships from "./_components/Partnerships";
 import SkillDevelopment from "./_components/SkillDev";
@@ -20,6 +21,7 @@ export default function Home() {
             <SkillEnhancement />
             <CATFramework />
             <SkillDevelopment />
+            <FAQ />
         </div>
     );
 }
