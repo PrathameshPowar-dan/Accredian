@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Flow_Circular } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,13 +29,14 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#F3F8FF]">
+      <body className="min-h-full flex flex-col bg-[#FFFFFF]">
         {/* Render Navbar globally at the top */}
         <Navbar />
         {/* Main content takes the remaining space */}
         <main className="grow">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
