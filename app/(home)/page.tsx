@@ -7,6 +7,7 @@ import Hero from "./_components/hero";
 import Partnerships from "./_components/Partnerships";
 import SkillDevelopment from "./_components/SkillDev";
 import SkillEnhancement from "./_components/SkillEnhancement";
+import Testimonials from "./_components/Testimonials";
 import TrackRecord from "./_components/TrackRecord";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
             <CATFramework />
             <SkillDevelopment />
             <FAQ />
+            <Testimonials />
         </div>
     );
 }
