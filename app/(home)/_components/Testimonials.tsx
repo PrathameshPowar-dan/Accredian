@@ -71,12 +71,12 @@ export default function TestimonialsSection() {
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 md:mt-10">
             {/* Heading */}
             <div className="mb-6 md:mb-8">
-                <h2 className="text-xl text-center md:text-5xl font-bold text-[#111827]">
+                <h2 className="text-xl text-center md:text-4xl font-bold text-[#111827]">
                     Testimonials from{" "}
                     <span className="text-[#1A73E8]">Our Partners</span>
                 </h2>
 
-                <p className="mt-2 text-center text-sm md:text-xl text-gray-700">
+                <p className="mt-2 text-center text-sm md:text-lg text-gray-700">
                     What <span className="text-[#1A73E8]">Our Clients</span> Are Saying
                 </p>
             </div>

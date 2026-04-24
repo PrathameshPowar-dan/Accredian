@@ -30,10 +30,10 @@ export default function Home() {
             <DomainExpertise />
             <Course />
             <SkillEnhancement />
-            <SkillDev />
             <CATFramework />
-            <Testimonials />
+            <SkillDev />
             <FAQ onOpenModal={handleOpenModal} />
+            <Testimonials />
             <Contact onOpenModal={handleOpenModal} />
 
             <EnquiryModal isOpen={isModalOpen} onClose={handleCloseModal} />
