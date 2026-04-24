@@ -2,8 +2,8 @@
 
 A fully responsive, high-performance partial clone of the Accredian Enterprise landing page. Built as a technical assignment within a 48-hour deadline, focusing on modern web development practices, clean UI architecture, and robust component design.
 
-**Live Demo:** [Insert Vercel Link Here]  
-**Repository:** [Insert GitHub Link Here]
+**Live Demo:** [https://accredian-eight.vercel.app/]  
+**Repository:** [https://github.com/PrathameshPowar-dan/Accredian]
 
 ---
 
