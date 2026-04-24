@@ -1,5 +1,6 @@
 import AccredianEdge from "./_components/AccredianEdge";
 import CATFramework from "./_components/CATFramework";
+import TrainingCTA from "./_components/Contact";
 import CourseSeg from "./_components/Course";
 import DomainExpertise from "./_components/DomainExpertise";
 import FAQ from "./_components/FAQ";
@@ -24,6 +25,7 @@ export default function Home() {
             <SkillDevelopment />
             <FAQ />
             <Testimonials />
+            <TrainingCTA />
         </div>
     );
 }
