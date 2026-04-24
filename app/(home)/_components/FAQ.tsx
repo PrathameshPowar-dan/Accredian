@@ -56,7 +56,7 @@ export default function FAQSection() {
             className="w-full max-w-6xl mx-auto px-4 sm:px-6 mt-4 md:mt-10"
         >
             {/* Heading */}
-            <div className="mb-8 md:mb-10 text-center md:text-left">
+            <div className="mb-6 md:mb-9 text-left">
                 <h2 className="text-2xl md:text-4xl font-bold text-[#111827]">
                     Frequently Asked{" "}
                     <span className="text-[#1A73E8]">Questions</span>
@@ -179,9 +179,9 @@ export default function FAQSection() {
                                     </h3>
 
                                     {isOpen ? (
-                                        <ChevronUp className="w-4 h-4 text-gray-500 shrink-0" />
+                                        <ChevronUp className="w-4 h-4 text-gray-700 shrink-0" />
                                     ) : (
-                                        <ChevronDown className="w-4 h-4 text-gray-500 shrink-0" />
+                                        <ChevronDown className="w-4 h-4 text-gray-700 shrink-0" />
                                     )}
                                 </button>
 
