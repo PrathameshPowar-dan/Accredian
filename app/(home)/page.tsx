@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Hero from "./_components/hero";
+import Hero from "./_components/Main";
 import TrackRecord from "./_components/TrackRecord";
 import Partnerships from "./_components/Partnerships";
 import AccredianEdge from "./_components/AccredianEdge";
