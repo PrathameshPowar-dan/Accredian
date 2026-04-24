@@ -3,9 +3,13 @@
 import React from "react";
 import { Headset, ChevronRight } from "lucide-react";
 
-export default function TrainingCTA() {
+interface ContactProps {
+    onOpenModal: () => void;
+}
+
+export default function TrainingCTA({ onOpenModal }: ContactProps) {
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-10 mb-8 md:mb-14">
+        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 md:mt-10 mb-2 md:mb-4">
             <div className="relative overflow-hidden rounded-xl md:rounded-2xl bg-[#1A73E8]">
 
                 {/* Background Rings */}
@@ -38,9 +42,11 @@ export default function TrainingCTA() {
                     </div>
 
                     {/* Button */}
-                    <button className="bg-white hover:bg-gray-100 text-[#1A73E8] text-xl font-semibold px-3 py-3 rounded-xl flex items-center gap-3 transition shrink-0">
+                    <button
+                        onClick={onOpenModal}
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200"
+                    >
                         Contact Us
-                        <ChevronRight className="w-7 h-7" />
                     </button>
                 </div>
 
@@ -58,7 +64,9 @@ export default function TrainingCTA() {
                     </h2>
 
                     {/* Button */}
-                    <button className="mt-7 bg-white text-[#1A73E8] text-[15px] font-semibold px-6 py-2.5 rounded-lg inline-flex items-center gap-1.5">
+                    <button
+                        onClick={onOpenModal}
+                        className="mt-7 bg-white text-[#1A73E8] text-[15px] font-semibold px-6 py-2.5 rounded-lg inline-flex items-center gap-1.5">
                         Contact Us
                         <ChevronRight className="w-4 h-4" />
                     </button>

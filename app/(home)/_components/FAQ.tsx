@@ -3,7 +3,11 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-export default function FAQSection() {
+interface FAQProps {
+    onOpenModal: () => void;
+}
+
+export default function FAQSection({ onOpenModal }: FAQProps) {
     const tabs = [
         "About the Course",
         "About the Delivery",
@@ -129,7 +133,10 @@ export default function FAQSection() {
             </div>
             {/* CTA */}
             <div className="hidden md:flex m-auto w-full justify-center items-center">
-                <button className="bg-[#1A73E8] text-white text-sm font-medium px-6 py-3 rounded-md shadow">
+                <button
+                    onClick={onOpenModal}
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200"
+                >
                     Enquire Now
                 </button>
             </div>
@@ -197,7 +204,10 @@ export default function FAQSection() {
 
                 {/* CTA */}
                 <div className="mt-6 flex justify-center">
-                    <button className="bg-[#1A73E8] text-white text-sm font-medium px-5 py-2.5 rounded-md shadow">
+                    <button
+                        onClick={onOpenModal}
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200"
+                    >
                         Enquire Now
                     </button>
                 </div>

@@ -1,7 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Hero() {
+interface HeroProps {
+    onOpenModal: () => void;
+}
+
+export default function Hero({ onOpenModal }: HeroProps) {
     return (
         <section id='home' className="w-full max-w-8xl mx-auto px-0 md:px-6 lg:px-8 mt-0 md:mt-8">
             <div className="bg-[#F0F7FF] shadow-2xl rounded-none md:rounded-4xl overflow-hidden flex flex-col-reverse md:flex-row items-center md:items-stretch justify-between relative px-6 pt-6 pb-8 md:px-14 md:pt-16 md:pb-0">
@@ -32,12 +36,12 @@ export default function Hero() {
                     </div>
 
                     {/* CTA Button */}
-                    <Link
-                        href="#enquire"
-                        className="w-full md:w-auto block md:inline-block bg-[#1A73E8] hover:bg-blue-700 text-white text-lg font-medium py-3 px-8 rounded-lg md:rounded-md transition-colors duration-200"
+                    <button
+                        onClick={onOpenModal}
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-200"
                     >
                         Enquire Now
-                    </Link>
+                    </button>
                 </div>
 
                 {/* Right Side: Image */}

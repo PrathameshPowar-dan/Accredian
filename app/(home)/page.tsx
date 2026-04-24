@@ -1,31 +1,42 @@
-import AccredianEdge from "./_components/AccredianEdge";
-import CATFramework from "./_components/CATFramework";
-import TrainingCTA from "./_components/Contact";
-import CourseSeg from "./_components/Course";
-import DomainExpertise from "./_components/DomainExpertise";
-import FAQ from "./_components/FAQ";
+"use client";
+
+import { useState } from "react";
 import Hero from "./_components/hero";
-import Partnerships from "./_components/Partnerships";
-import SkillDevelopment from "./_components/SkillDev";
-import SkillEnhancement from "./_components/SkillEnhancement";
-import Testimonials from "./_components/Testimonials";
 import TrackRecord from "./_components/TrackRecord";
+import Partnerships from "./_components/Partnerships";
+import AccredianEdge from "./_components/AccredianEdge";
+import DomainExpertise from "./_components/DomainExpertise";
+import Course from "./_components/Course";
+import SkillEnhancement from "./_components/SkillEnhancement";
+import SkillDev from "./_components/SkillDev";
+import CATFramework from "./_components/CATFramework";
+import Testimonials from "./_components/Testimonials";
+import FAQ from "./_components/FAQ";
+import Contact from "./_components/Contact";
+import EnquiryModal from "@/components/EnquiryModal";
 
 export default function Home() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => setIsModalOpen(true);
+    const handleCloseModal = () => setIsModalOpen(false);
+
     return (
-        <div className="flex bg-white flex-col gap-8 md:gap-18 pb-20">
-            <Hero />
+        <main className="flex bg-white flex-col gap-8 md:gap-18 pb-20 w-full">
+            <Hero onOpenModal={handleOpenModal} />
             <TrackRecord />
             <Partnerships />
             <AccredianEdge />
             <DomainExpertise />
-            <CourseSeg />
+            <Course />
             <SkillEnhancement />
+            <SkillDev />
             <CATFramework />
-            <SkillDevelopment />
-            <FAQ />
             <Testimonials />
-            <TrainingCTA />
-        </div>
+            <FAQ onOpenModal={handleOpenModal} />
+            <Contact onOpenModal={handleOpenModal} />
+
+            <EnquiryModal isOpen={isModalOpen} onClose={handleCloseModal} />
+        </main>
     );
 }
