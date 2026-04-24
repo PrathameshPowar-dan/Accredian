@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
     };
 
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 md:mt-10">
+        <section id="testimonials" className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5 md:mt-10">
             {/* Heading */}
             <div className="mb-6 md:mb-8">
                 <h2 className="text-xl text-center md:text-4xl font-bold text-[#111827]">
